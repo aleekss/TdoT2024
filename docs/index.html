@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>ITP2 Projekte Presentation</title>
+
+  <!-- Reveal.js styles -->
+  <link rel="stylesheet" href="dist/reset.css">
+  <link rel="stylesheet" href="dist/reveal.css">
+  <link rel="stylesheet" href="dist/theme/black.css">
+
+  <!-- Theme for syntax highlighted code -->
+  <link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+  <!-- Custom styles -->
+  <style>
+    body {
+      font-family: 'Arial, sans-serif';
+      background-color: #f2f2f2;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .reveal {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .slides {
+      text-align: left;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      color: #fff;
+    }
+    #taschenrechner {
+      max-width: 50%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+    #ss1 {
+      max-width: 90%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+
+    }
+    #ss2{
+      max-width: 90%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+    #ss3{
+      max-width: 90%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    #racing-game {
+      position: relative;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    #racing-game img {
+      animation: driveAway 60s ease-in-out forwards;
+    }
+
+    @keyframes driveAway {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(200%);
+      }
+    }
+
+    #racing-game-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 48px;
+      visibility: visible;
+    }
+
+    #gitHub {
+      color: black;
+      font-weight: bold;
+    }
+      #repository{
+        font-size:48px;
+        font-family: "Times New Roman";
+      }
+
+
+    #repository-text{
+      font-size:28px;
+      font-family: "Times New Roman";
+    }
+
+    #commits{
+      font-size:35px;
+      font-family: "Times New Roman";
+      font-weight:bold ;
+    }
+
+    a {
+      color: orange;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+
+    }
+
+    a:focus {
+      outline: none;
+
+    }
+
+
+
+
+
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section data-transition="fade">
+        <h1>ITP2 Projekte</h1>
+        <ul>
+          <li><a href="#taschenrechner" class="project-link">Taschenrechner</a></li>
+          <li><a href="#schere-stein-papier" class="project-link">Schere-Stein-Papier</a></li>
+          <li><a href="#minesweeper" class="project-link">Minesweeper</a></li>
+          <li><a href="#racing-game" class="project-link">Racing-Game</a></li>
+          <li><a href="#snake" class="project-link">Snake-Game</a></li>
+          <li><a href="#gitHub" class="project-link">Einführung in Github</a></li>
+        </ul>
+      </section>
+
+ 	<section data-transition="zoom" data-background="white">
+	Taschenrechner <img id="taschenrechner" src="media/taschenrechner.png" > </section>
+      <section data-background="white" id="schere-stein-papier">
+        <div class="r-stack" >
+          <h3>Schere-Stein-Papier</h3>
+          <img id="ss1" src="media/ss1.png"  class="fragment">
+          <img id="ss2" src="media/ss2.png"  class="fragment">
+          <img id="ss3" src="media/ss33.png"  class="fragment">
+
+        </div>
+      </section>
+      <section data-transition="convex" data-background="white">
+        <div>
+        <h3 id="minesweepertext">Minesweeper</h3>
+        <img id="minesweeper" src="media/minesweeper.png" class="fragment">
+
+        </div>
+      </section>
+
+      <section data-transition="convex-in concave-out" data-background="white">
+
+
+        <div id="racing-game">
+        <h4 id="racing-game-text"> Racing-Game </h4>
+          <img src ="media/car.png">
+        </div>
+      </section>
+
+      <section data-background="white"  data-auto-animate>
+        <a href="#">Spielmenü</a><br>
+        <a href="#">Auswahl von Auto</a><br>
+        <a href="#">Laden des Spiels</a><br>
+        <a href="#">Spiel</a><br>
+
+      </section>
+      <section data-auto-animate data-background="#f4f6fa">
+       <img src ="media/spielmenue.png" style="max-width: 70%;height: auto;display: block;margin: 0 auto;">
+      </section>
+      <section data-auto-animate data-background="#f4f6fa">
+      <img src ="media/auswahlautos.png" style="max-width: 70%;height: auto;display: block;margin: 0 auto;">
+    </section>
+      <section data-auto-animate data-background="#f4f6fa">
+        <img src ="media/animationladen1.png" style="max-width: 70%;height: auto;display: block;margin: 0 auto;">
+      </section>
+      <section data-auto-animate data-background="#f4f6fa ">
+        <img src ="media/spielspielen.png" style="max-width: 90%;height: auto;display: block;margin: 0 auto;">
+      </section>
+
+
+      <section data-transition="convex" data-background="white">
+        <div>
+          <h3 id="snaketext">Snake-Game</h3>
+          <img id="snake" src="media/snakefirst.png">
+        </div>
+      </section>
+      <section data-transition="convex">
+        <div>
+          <ul>
+            <li><a href="#snakemenu" class="project-link">Snake Menu</a></li>
+            <li><a href="#music-settings" class="project-link">Music Settings</a></li>
+            <li><a href="#game1" class="project-link">Game</a></li>
+            <li><a href="#gameover" class="project-link">Game-Over</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section data-auto-animate data-background="white">
+        <img id="snakemenu" src ="media/menu.png" style="max-width: 90%;height: auto;display: block;margin: 0 auto;">
+      </section>
+      <section data-auto-animate data-background="white">
+        <img id="music-settings"src ="media/musicvolume.png" style= "max-width: 90%;height: auto;display: block;margin: 0 auto; ">
+      </section>
+      <section data-auto-animate data-background="#00050d">
+        <img id="game1" src ="media/snakegame.png" style="max-width: 70%;height: auto;display: block;margin: 0 auto;">
+      </section>
+      <section data-auto-animate data-background="#00050d">
+        <img src ="media/snakegame2.png" style="max-width: 70%;height: auto;display: block;margin: 0 auto;">
+      </section>
+      <section data-auto-animate data-background="#00050d">
+        <img id= "gameover" src ="media/gameover.png" style="max-width: 90%;height: auto;display: block;margin: 0 auto;">
+      </section>
+
+
+      <section id="gitHub" data-transition="zoom" data-background="white">
+        <img src="media/gitHub.png" style="max-width: 50%;height: auto;display: block;margin: 0 auto;">
+       <br> Einführung in GitHub </section>
+
+      <section>
+        <div id="textGitHub">
+       <h6> Was ist Github?</h6>
+       <p>GitHub ist eine webbasierte Plattform zur Versionskontrolle und Zusammenarbeit, die es Entwicklern ermöglicht,
+       gemeinsam an Projekten zu arbeiten und Code zu verwalten.</p>
+
+     </div>
+      </section>
+
+      <section data-transition="convex" data-background="#0d1117">
+
+        <p id="repository">Hier sieht man die Übersicht von den Repositorys</p>
+        <img src="media/repository.png" style="max-width: 80%;height: auto;display: block;margin: 0 auto;">
+        <p id="repository-text">Ein Repository ist ein Speicherort, wo man Codeprojekte oder andere Ressourcen verwalten kann.
+        Es enthält alle Dateien, den Code, die Historie der Änderungen und ermöglicht Zusammenarbeit mehrerer Entwickler.</p>
+
+      </section>
+
+      <section data-auto-animate data-background="#0d1117">
+
+        <p id="commits">
+          Die Übersicht der Commits bietet einen klaren Einblick in die Entwicklungshistorie.</p>
+        <img src="media/commits.png" style="max-width: 110%;height: auto;display: block;margin: 0 auto;">
+
+
+      </section>
+
+
+
+    </div>
+  </div>
+
+  <!-- Reveal.js scripts -->
+  <script src="dist/reveal.js"></script>
+  <script src="plugin/notes/notes.js"></script>
+  <script src="plugin/markdown/markdown.js"></script>
+  <script src="plugin/highlight/highlight.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+    });
+  </script>
+</body>
+</html>
